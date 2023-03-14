@@ -44,3 +44,42 @@ Tue 14 Mar 2023 06:02:23 PM UTC:
  tests:  2|5
 total_score: 20/70
 8010e5c
+Tue 14 Mar 2023 06:06:23 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c:55:1: error: unknown type name ‘Persona’; did you mean ‘tipoPersona’?
+   55 | Persona* crearPersona(char nombre[], char rut[], int edad) {
+      | ^~~~~~~
+      | tipoPersona
+exercises.c: In function ‘crearPersona’:
+exercises.c:56:4: error: unknown type name ‘Persona’; did you mean ‘tipoPersona’?
+   56 |    Persona * p = (Persona *) malloc(sizeof(Persona));
+      |    ^~~~~~~
+      |    tipoPersona
+exercises.c:56:19: error: ‘Persona’ undeclared (first use in this function)
+   56 |    Persona * p = (Persona *) malloc(sizeof(Persona));
+      |                   ^~~~~~~
+exercises.c:56:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:56:28: error: expected expression before ‘)’ token
+   56 |    Persona * p = (Persona *) malloc(sizeof(Persona));
+      |                            ^
+test.c: In function ‘test_creaP’:
+test.c:112:5: error: unknown type name ‘Persona’; did you mean ‘tipoPersona’?
+  112 |     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+      |     ^~~~~~~
+      |     tipoPersona
+test.c:120:16: error: request for member ‘nombre’ in something not a structure or union
+  120 |     if(strcmp(p->nombre,nombre)!=0){
+      |                ^~
+test.c:121:37: error: request for member ‘nombre’ in something not a structure or union
+  121 |         sprintf(msg,"p->nombre=%s",p->nombre);
+      |                                     ^~
+test.c:126:9: error: request for member ‘edad’ in something not a structure or union
+  126 |     if(p->edad!=edad){
+      |         ^~
+test.c:127:35: error: request for member ‘edad’ in something not a structure or union
+  127 |         sprintf(msg,"p->edad=%d",p->edad);
+      |                                   ^~
+Compilation failed
+4781991

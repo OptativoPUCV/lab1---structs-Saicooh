@@ -32,7 +32,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min)
 
   for(int i = 1 ; i < n ; i++)
   {
-      if(a[i] > *max) *max = a[i];
+      if (a[i] > *max) *max = a[i];
       else if (a[i] < *min) *min = a[i];
   }  
 }
@@ -44,11 +44,12 @@ crearPersona(...), la cual crea una nueva persona con
 los datos ingresados como parámetros y retorna un puntero 
 al dato recién creado.
 */
-typedef struct {
+typedef struct 
+{
   char nombre[30];
   char rut[11];
   int edad;
-} Persona;
+} tipoPersona;
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
