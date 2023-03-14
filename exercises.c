@@ -58,8 +58,8 @@ tipoPersona *crearPersona (char nombre[], char rut[], int edad)
   
    //asignar valores de entrada a los campos de p
 
-  strcpy(p->nombre, "Ignacio");
-  strcpy(p->rut, "15489XXX-2");
+  strcpy(p->nombre, nombre);
+  strcpy(p->rut, rut);
   p->edad = 38;
 
    return p;
