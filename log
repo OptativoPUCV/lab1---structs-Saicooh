@@ -135,3 +135,29 @@ test.c:127:35: error: request for member ‘edad’ in something not a structure
 cc1: all warnings being treated as errors
 Compilation failed
 21795a1
+Tue 14 Mar 2023 06:17:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘test_creaP’:
+test.c:112:5: error: unknown type name ‘Persona’; did you mean ‘tipoPersona’?
+  112 |     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+      |     ^~~~~~~
+      |     tipoPersona
+test.c:112:16: error: initialization of ‘int *’ from incompatible pointer type ‘tipoPersona *’ [-Werror=incompatible-pointer-types]
+  112 |     Persona* p=crearPersona(nombre, "15489XXX-2", edad);
+      |                ^~~~~~~~~~~~
+test.c:120:16: error: request for member ‘nombre’ in something not a structure or union
+  120 |     if(strcmp(p->nombre,nombre)!=0){
+      |                ^~
+test.c:121:37: error: request for member ‘nombre’ in something not a structure or union
+  121 |         sprintf(msg,"p->nombre=%s",p->nombre);
+      |                                     ^~
+test.c:126:9: error: request for member ‘edad’ in something not a structure or union
+  126 |     if(p->edad!=edad){
+      |         ^~
+test.c:127:35: error: request for member ‘edad’ in something not a structure or union
+  127 |         sprintf(msg,"p->edad=%d",p->edad);
+      |                                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+0384b9f
