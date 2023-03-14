@@ -49,12 +49,12 @@ typedef struct
   char nombre[30];
   char rut[11];
   int edad;
-} tipoPersona;
+} Persona;
 
 
-tipoPersona *crearPersona (char nombre[], char rut[], int edad)
+Persona *crearPersona (char nombre[], char rut[], int edad)
 {
-   tipoPersona *p = (tipoPersona *) malloc (sizeof(tipoPersona));
+   Persona *p = (Persona *) malloc (sizeof(Persona));
   
    //asignar valores de entrada a los campos de p
 
