@@ -52,10 +52,15 @@ typedef struct
 } tipoPersona;
 
 
-Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona * p = (Persona *) malloc(sizeof(Persona));
+tipoPersona *crearPersona (char nombre[], char rut[], int edad)
+{
+   tipoPersona *p = (tipoPersona *) malloc (sizeof(tipoPersona));
+  
    //asignar valores de entrada a los campos de p
 
+  strcpy(p->nombre, "Ignacio");
+  strcpy(p->rut, "15489XXX-2");
+  p->edad = 38;
 
    return p;
 }
