@@ -335,3 +335,16 @@ Thu 16 Mar 2023 12:22:01 AM UTC:
  tests:  4|3
 total_score: 40/70
 32c3b7f
+Thu 16 Mar 2023 12:23:12 AM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:11: error: redefinition of ‘registro’
+   87 |   Vector *registro = (Vector *) malloc(n * sizeof(Vector));
+      |           ^~~~~~~~
+exercises.c:85:11: note: previous definition of ‘registro’ with type ‘Vector *’
+   85 |   Vector *registro = NULL;
+      |           ^~~~~~~~
+Compilation failed
+bc7ea02
