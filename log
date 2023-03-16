@@ -348,3 +348,13 @@ exercises.c:85:11: note: previous definition of ‘registro’ with type ‘Vect
       |           ^~~~~~~~
 Compilation failed
 bc7ea02
+Thu 16 Mar 2023 12:24:28 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:15: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+   87 |   *registro = (Vector *) malloc(n * sizeof(Vector));
+      |               ^
+Compilation failed
+98b1162
