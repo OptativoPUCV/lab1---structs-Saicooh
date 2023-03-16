@@ -84,7 +84,7 @@ Vector *crearVector(int n)
   Vector *registro = (Vector *) malloc(n * sizeof(Vector));
   if (registro == NULL) exit(EXIT_FAILURE);
 
-  Vector -> datos = (int *) calloc (n, sizeof(int));
+  registro -> datos = (int *) calloc (n, sizeof(int));
   
    return NULL;
 }
