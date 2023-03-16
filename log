@@ -229,3 +229,13 @@ exercises.c:85:20: error: expected expression before ‘)’ token
       |                    ^
 Compilation failed
 4f84cfa
+Thu 16 Mar 2023 12:04:21 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:20: error: expected expression before ‘)’ token
+   86 |   *datos = (datos *) malloc(n, sizeof(Vector));
+      |                    ^
+Compilation failed
+f1bafb9

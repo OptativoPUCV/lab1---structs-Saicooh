@@ -82,7 +82,8 @@ typedef struct
 Vector *crearVector(int n) 
 {
   int *datos = NULL;
-  *datos = (datos *) malloc(Vector.capacidad, sizeof(Vector));
+  
+  *datos = (datos *) malloc(n, sizeof(Vector));
   
    return NULL;
 }
