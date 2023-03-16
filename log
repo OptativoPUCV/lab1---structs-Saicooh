@@ -219,3 +219,13 @@ Tue 14 Mar 2023 06:18:51 PM UTC:
  tests:  3|4
 total_score: 30/70
 0919232
+Thu 16 Mar 2023 12:01:41 AM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:85:20: error: expected expression before ‘)’ token
+   85 |   *datos = (datos *) malloc(Vector.capacidad, sizeof(Vector));
+      |                    ^
+Compilation failed
+4f84cfa

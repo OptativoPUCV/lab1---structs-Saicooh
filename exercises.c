@@ -73,12 +73,17 @@ un vector con capacidad `n`, reserva la memoria
 correspondiente para el arreglo con `n` datos 
 inicializados en 0 y luego retorna el vector creado.
 */
-typedef struct {
+typedef struct 
+{
    int *datos; // arreglo dinámico
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
+Vector *crearVector(int n) 
+{
+  int *datos = NULL;
+  *datos = (datos *) malloc(Vector.capacidad, sizeof(Vector));
+  
    return NULL;
 }
 
