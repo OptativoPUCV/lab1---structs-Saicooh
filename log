@@ -372,3 +372,17 @@ exercises.c:102:5: error: ‘Vector’ has no member named ‘vector’
       |     ^~
 Compilation failed
 2bd376d
+Thu 16 Mar 2023 12:34:18 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:15: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+   87 |   *registro = (Vector *) malloc(n * sizeof(Vector));
+      |               ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:102:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  102 |   v[i] = valor;
+      |          ^~~~~
+Compilation failed
+efe2c06
