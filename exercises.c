@@ -86,7 +86,7 @@ Vector *crearVector(int n)
 
   registro -> datos = (int *) calloc (n, sizeof(int));
   
-   return NULL;
+   return registro;
 }
 
 /*
