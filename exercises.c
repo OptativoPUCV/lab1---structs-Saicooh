@@ -85,8 +85,8 @@ Vector *crearVector(int n)
   if (registro == NULL) exit(EXIT_FAILURE);
 
   registro -> datos = (int *) calloc (n, sizeof(int));
-  
-   return registro;
+  registro -> capacidad = n;
+  return registro;
 }
 
 /*
