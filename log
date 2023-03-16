@@ -423,3 +423,13 @@ exercises.c:113:24: error: expected ‘;’ before ‘}’ token
       | ~                       
 Compilation failed
 5bbc194
+Thu 16 Mar 2023 12:41:33 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:15: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+   87 |   *registro = (Vector *) malloc(n * sizeof(Vector));
+      |               ^
+Compilation failed
+9d71aef
