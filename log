@@ -358,3 +358,17 @@ exercises.c:87:15: error: incompatible types when assigning to type ‘Vector’
       |               ^
 Compilation failed
 98b1162
+Thu 16 Mar 2023 12:33:36 AM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:15: error: incompatible types when assigning to type ‘Vector’ from type ‘Vector *’
+   87 |   *registro = (Vector *) malloc(n * sizeof(Vector));
+      |               ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:102:5: error: ‘Vector’ has no member named ‘vector’
+  102 |   v -> vector[i] = valor;
+      |     ^~
+Compilation failed
+2bd376d
