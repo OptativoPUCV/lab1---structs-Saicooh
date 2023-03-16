@@ -81,9 +81,10 @@ typedef struct
 
 Vector *crearVector(int n) 
 {
-  int *datos = NULL;
-  
-  *datos = (int *) calloc(n, sizeof(int));
+  Vector *registro = (Vector *) malloc(n * sizeof(Vector));
+  if (registro == NULL) exit(EXIT_FAILURE);
+
+  Vector -> datos = (int *) calloc (n, sizeof(int));
   
    return NULL;
 }
