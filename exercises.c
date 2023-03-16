@@ -83,7 +83,7 @@ Vector *crearVector(int n)
 {
   int *datos = NULL;
   
-  *datos = (int *) malloc(n, sizeof(Vector));
+  *datos = (int *) malloc(n, sizeof(int));
   
    return NULL;
 }
