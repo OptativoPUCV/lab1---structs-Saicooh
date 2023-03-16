@@ -122,7 +122,7 @@ void sumaV(Vector *a, Vector *b, Vector *c)
 {
   for (size_t i = 0 ; i < a -> capacidad ; i++)
   {
-    c -> datos = a[i]+b[i];
+    c -> datos[i]= a[i]+b[i];
     
   }
 }
